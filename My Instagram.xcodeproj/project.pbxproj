@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		F10ACC0026B64D4B00E8A58C /* My_InstagramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACBFF26B64D4B00E8A58C /* My_InstagramApp.swift */; };
-		F10ACC0226B64D4B00E8A58C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC0126B64D4B00E8A58C /* ContentView.swift */; };
 		F10ACC0426B64D5400E8A58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10ACC0326B64D5400E8A58C /* Assets.xcassets */; };
 		F10ACC0726B64D5400E8A58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10ACC0626B64D5400E8A58C /* Preview Assets.xcassets */; };
+		F10ACC1526B64ED000E8A58C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC1426B64ED000E8A58C /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F10ACBFC26B64D4B00E8A58C /* My Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Instagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10ACBFF26B64D4B00E8A58C /* My_InstagramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_InstagramApp.swift; sourceTree = "<group>"; };
-		F10ACC0126B64D4B00E8A58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F10ACC0326B64D5400E8A58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10ACC0626B64D5400E8A58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F10ACC0826B64D5400E8A58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F10ACC1426B64ED000E8A58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +52,12 @@
 		F10ACBFE26B64D4B00E8A58C /* My Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC0E26B64DA300E8A58C /* Model */,
+				F10ACC0F26B64DC500E8A58C /* View */,
+				F10ACC1026B64E1700E8A58C /* ViewModel */,
+				F10ACC1126B64E2100E8A58C /* API */,
+				F10ACC1226B64E2800E8A58C /* Utils */,
 				F10ACBFF26B64D4B00E8A58C /* My_InstagramApp.swift */,
-				F10ACC0126B64D4B00E8A58C /* ContentView.swift */,
 				F10ACC0326B64D5400E8A58C /* Assets.xcassets */,
 				F10ACC0826B64D5400E8A58C /* Info.plist */,
 				F10ACC0526B64D5400E8A58C /* Preview Content */,
@@ -67,6 +71,146 @@
 				F10ACC0626B64D5400E8A58C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F10ACC0E26B64DA300E8A58C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F10ACC0F26B64DC500E8A58C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F10ACC1D26B6506A00E8A58C /* Commons */,
+				F10ACC1C26B64FC100E8A58C /* Authentication */,
+				F10ACC1B26B64F9C00E8A58C /* Notifications */,
+				F10ACC1A26B64F9200E8A58C /* Search */,
+				F10ACC1926B64F5B00E8A58C /* Comments */,
+				F10ACC1826B64F5100E8A58C /* Feed */,
+				F10ACC1726B64F4800E8A58C /* Profile */,
+				F10ACC1626B64F3400E8A58C /* UploadPost */,
+				F10ACC1326B64E9000E8A58C /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F10ACC1026B64E1700E8A58C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F10ACC2126B650E900E8A58C /* Profile */,
+				F10ACC2026B650DB00E8A58C /* Authentication */,
+				F10ACC1E26B650BA00E8A58C /* Notifications */,
+				F10ACC1F26B650C100E8A58C /* Feed */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F10ACC1126B64E2100E8A58C /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F10ACC1226B64E2800E8A58C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F10ACC1326B64E9000E8A58C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F10ACC1426B64ED000E8A58C /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F10ACC1626B64F3400E8A58C /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		F10ACC1726B64F4800E8A58C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F10ACC1826B64F5100E8A58C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F10ACC1926B64F5B00E8A58C /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		F10ACC1A26B64F9200E8A58C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F10ACC1B26B64F9C00E8A58C /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F10ACC1C26B64FC100E8A58C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F10ACC1D26B6506A00E8A58C /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		F10ACC1E26B650BA00E8A58C /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F10ACC1F26B650C100E8A58C /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F10ACC2026B650DB00E8A58C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F10ACC2126B650E900E8A58C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F10ACC0226B64D4B00E8A58C /* ContentView.swift in Sources */,
+				F10ACC1526B64ED000E8A58C /* ContentView.swift in Sources */,
 				F10ACC0026B64D4B00E8A58C /* My_InstagramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
