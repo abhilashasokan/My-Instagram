@@ -11,6 +11,18 @@
 		F10ACC0426B64D5400E8A58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10ACC0326B64D5400E8A58C /* Assets.xcassets */; };
 		F10ACC0726B64D5400E8A58C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10ACC0626B64D5400E8A58C /* Preview Assets.xcassets */; };
 		F10ACC1526B64ED000E8A58C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC1426B64ED000E8A58C /* ContentView.swift */; };
+		F10ACC2326B6553800E8A58C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC2226B6553800E8A58C /* MainTabView.swift */; };
+		F10ACC2526B6557100E8A58C /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC2426B6557100E8A58C /* FeedView.swift */; };
+		F10ACC2726B655A400E8A58C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC2626B655A400E8A58C /* SearchView.swift */; };
+		F10ACC2926B655AF00E8A58C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC2826B655AF00E8A58C /* NotificationView.swift */; };
+		F10ACC2B26B655CA00E8A58C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC2A26B655CA00E8A58C /* ProfileView.swift */; };
+		F10ACC2D26B655E200E8A58C /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC2C26B655E200E8A58C /* UploadPostView.swift */; };
+		F10ACC2F26B65E1F00E8A58C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC2E26B65E1F00E8A58C /* FeedCell.swift */; };
+		F10ACC3126B6F8EB00E8A58C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC3026B6F8EB00E8A58C /* SearchBar.swift */; };
+		F10ACC3326B6FD5100E8A58C /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC3226B6FD5100E8A58C /* PostGridView.swift */; };
+		F10ACC3526B7001500E8A58C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC3426B7001500E8A58C /* UserCell.swift */; };
+		F10ACC3726B7002000E8A58C /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC3626B7002000E8A58C /* UserListView.swift */; };
+		F10ACC3926B7070700E8A58C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10ACC3826B7070700E8A58C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +32,18 @@
 		F10ACC0626B64D5400E8A58C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F10ACC0826B64D5400E8A58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10ACC1426B64ED000E8A58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F10ACC2226B6553800E8A58C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		F10ACC2426B6557100E8A58C /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		F10ACC2626B655A400E8A58C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F10ACC2826B655AF00E8A58C /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F10ACC2A26B655CA00E8A58C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F10ACC2C26B655E200E8A58C /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		F10ACC2E26B65E1F00E8A58C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		F10ACC3026B6F8EB00E8A58C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = ../../../../../../Desktop/SearchBar.swift; sourceTree = "<group>"; };
+		F10ACC3226B6FD5100E8A58C /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		F10ACC3426B7001500E8A58C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F10ACC3626B7002000E8A58C /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		F10ACC3826B7070700E8A58C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +141,7 @@
 		F10ACC1226B64E2800E8A58C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC3826B7070700E8A58C /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -125,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				F10ACC1426B64ED000E8A58C /* ContentView.swift */,
+				F10ACC2226B6553800E8A58C /* MainTabView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -132,6 +158,7 @@
 		F10ACC1626B64F3400E8A58C /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC2C26B655E200E8A58C /* UploadPostView.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -139,6 +166,7 @@
 		F10ACC1726B64F4800E8A58C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC2A26B655CA00E8A58C /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -146,6 +174,8 @@
 		F10ACC1826B64F5100E8A58C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC2426B6557100E8A58C /* FeedView.swift */,
+				F10ACC2E26B65E1F00E8A58C /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -160,6 +190,8 @@
 		F10ACC1A26B64F9200E8A58C /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC2626B655A400E8A58C /* SearchView.swift */,
+				F10ACC3026B6F8EB00E8A58C /* SearchBar.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -167,6 +199,7 @@
 		F10ACC1B26B64F9C00E8A58C /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC2826B655AF00E8A58C /* NotificationView.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -181,6 +214,9 @@
 		F10ACC1D26B6506A00E8A58C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				F10ACC3226B6FD5100E8A58C /* PostGridView.swift */,
+				F10ACC3426B7001500E8A58C /* UserCell.swift */,
+				F10ACC3626B7002000E8A58C /* UserListView.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -282,8 +318,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10ACC2726B655A400E8A58C /* SearchView.swift in Sources */,
+				F10ACC2526B6557100E8A58C /* FeedView.swift in Sources */,
+				F10ACC3326B6FD5100E8A58C /* PostGridView.swift in Sources */,
 				F10ACC1526B64ED000E8A58C /* ContentView.swift in Sources */,
 				F10ACC0026B64D4B00E8A58C /* My_InstagramApp.swift in Sources */,
+				F10ACC2326B6553800E8A58C /* MainTabView.swift in Sources */,
+				F10ACC2D26B655E200E8A58C /* UploadPostView.swift in Sources */,
+				F10ACC2B26B655CA00E8A58C /* ProfileView.swift in Sources */,
+				F10ACC3526B7001500E8A58C /* UserCell.swift in Sources */,
+				F10ACC3126B6F8EB00E8A58C /* SearchBar.swift in Sources */,
+				F10ACC2926B655AF00E8A58C /* NotificationView.swift in Sources */,
+				F10ACC2F26B65E1F00E8A58C /* FeedCell.swift in Sources */,
+				F10ACC3726B7002000E8A58C /* UserListView.swift in Sources */,
+				F10ACC3926B7070700E8A58C /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SweetGodzillas.My-Instagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,7 +494,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SweetGodzillas.My-Instagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
