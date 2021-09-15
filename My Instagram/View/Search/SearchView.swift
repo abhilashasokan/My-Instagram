@@ -20,9 +20,10 @@ struct SearchView: View {
                 if inSearchMode {
                     UserListView()
                 } else {
-                    PostGridView()
+                PostGridView()
                 }
             }
+            
         }
     }
 }
