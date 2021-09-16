@@ -50,6 +50,16 @@ struct LoginView: View {
                             .padding(.top)
                     })
                     Spacer()
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        HStack {
+                            Text("Don't have an account?")
+                                .font(.system(size: 14))
+                            
+                            Text("Sign Up")
+                                .font(.system(size: 14, weight: .semibold))
+                        }.foregroundColor(.white)
+                    }).padding(.bottom, 24)
+                    
                 }
             }
         }
