@@ -11,11 +11,13 @@ struct UploadPostView: View {
     @State private var selectedImage: UIImage?
     @State var postImage: Image?
     @State var captionText = ""
+    @State var imagePickerPresented = false
+    
     
     var body: some View {
         VStack {
-            if ((postImage) != nil) {
-                Button(action: {}, label: {
+            if ((postImage) == nil) {
+                Button(action: {imagePickerPresented.toggle()}, label: {
                     Image("camera")
                         .resizable()
                         .renderingMode(/*@START_MENU_TOKEN@*/.template/*@END_MENU_TOKEN@*/)
@@ -24,10 +26,14 @@ struct UploadPostView: View {
                         .clipped()
                         .foregroundColor(.black)
                 })
+                .padding(.top)
+                .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
+                    ImagePicker(image: $selectedImage)
+                })
             }
-            else {
+            else if let image = postImage {
                 HStack {
-                    Image("batman")
+                    image
                         .resizable()
                         .scaledToFill()
                         .frame(width: 96, height: 96)
@@ -49,6 +55,12 @@ struct UploadPostView: View {
     }
 }
 
+extension UploadPostView {
+    func loadImage() {
+        guard let selectedImage = selectedImage else {return}
+        postImage = Image(uiImage: selectedImage)
+    }
+}
 
 struct UploadPostView_Previews: PreviewProvider {
     static var previews: some View {
