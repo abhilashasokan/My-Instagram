@@ -24,7 +24,7 @@ struct UploadPostView: View {
                         .scaledToFill()
                         .frame(width: 180, height: 180)
                         .clipped()
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                 })
                 .padding(.top)
                 .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {

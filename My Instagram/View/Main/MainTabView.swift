@@ -32,10 +32,10 @@ struct MainTabView: View {
                         Image(systemName: "person")
                     }
             }
-            .accentColor(.black)
+            .accentColor(.primary)
             .navigationBarTitle(Text("Home"))
             .navigationBarTitleDisplayMode(.inline)
-            .accentColor(.black)
+            .accentColor(.primary)
         }
     }
 }
@@ -43,5 +43,6 @@ struct MainTabView: View {
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
+            .preferredColorScheme(.dark)
     }
 }

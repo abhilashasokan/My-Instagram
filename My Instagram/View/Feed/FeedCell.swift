@@ -53,7 +53,7 @@ struct FeedCell: View {
                         .padding(4)
                 })
             }
-            .foregroundColor(.black)
+            .foregroundColor(.primary)
             .padding(.leading, 4)
             
             Text("3 Likes")
@@ -82,5 +82,6 @@ struct FeedCell: View {
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
         FeedCell()
+            .preferredColorScheme(.dark)
     }
 }

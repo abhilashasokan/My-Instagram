@@ -37,7 +37,7 @@ struct SearchBar: View {
                     UIApplication.shared.endEditing()
                 }, label: {
                     Text("Cancel")
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                 })
                 .padding(.trailing, 8)
             }
@@ -48,5 +48,6 @@ struct SearchBar: View {
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
         SearchBar(text: .constant("Search..."), isEditing: .constant(true))
+            .preferredColorScheme(.dark)
     }
 }
