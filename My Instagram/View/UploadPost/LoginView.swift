@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
         NavigationView {
@@ -25,7 +26,7 @@ struct LoginView: View {
                     
                     VStack(spacing: 20) {
                         CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
-
+                        
                         CustomSecureField(text: $password, placeholder: Text("Password"))
                     }
                     
@@ -39,8 +40,10 @@ struct LoginView: View {
                                 .padding(.trailing, 34)
                         })
                     }
-                        
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    
+                    Button(action: {
+                        authViewModel.login()
+                    }, label: {
                         Text("Sign in")
                             .font(.headline)
                             .foregroundColor(.white)
@@ -50,18 +53,23 @@ struct LoginView: View {
                             .padding(.top)
                     })
                     Spacer()
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        HStack {
-                            Text("Don't have an account?")
-                                .font(.system(size: 14))
-                            
-                            Text("Sign Up")
-                                .font(.system(size: 14, weight: .semibold))
-                        }.foregroundColor(.white)
-                    }).padding(.bottom, 24)
+                    
+                    NavigationLink(
+                        destination: RegistrationView()
+                            .navigationBarHidden(true),
+                        label: {
+                            HStack {
+                                Text("Don't have an account?")
+                                    .font(.system(size: 14))
+                                
+                                Text("Sign Up")
+                                    .font(.system(size: 14, weight: .semibold))
+                            }.foregroundColor(.white)
+                        }).padding(.bottom, 16)
+                    
                     
                 }
-            }
+            }.padding(.top, -44)
         }
     }
 }
