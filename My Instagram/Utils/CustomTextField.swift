@@ -17,7 +17,7 @@ struct CustomTextField: View {
             if text.isEmpty {
                 placeholder
                     .foregroundColor(Color(.init(white: 1, alpha: 0.8)))
-                    .padding(.leading, 40)
+                    .padding(.leading, 30)
             }
             
             HStack {
@@ -41,5 +41,6 @@ struct CustomTextField: View {
 struct CustomTextField_Previews: PreviewProvider {
     static var previews: some View {
         CustomTextField(text: .constant(""), placeholder: Text("Email"), imageName: "envelope")
+            .preferredColorScheme(.dark)
     }
 }

@@ -51,9 +51,9 @@ struct RegistrationView: View {
                 VStack(spacing: 20) {
                     CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
                     
-                    CustomTextField(text: $email, placeholder: Text("User Name"), imageName: "person")
+                    CustomTextField(text: $username, placeholder: Text("User Name"), imageName: "person")
                     
-                    CustomTextField(text: $email, placeholder: Text("Full Name"), imageName: "person")
+                    CustomTextField(text: $fullname, placeholder: Text("Full Name"), imageName: "person")
                     
                     CustomSecureField(text: $password, placeholder: Text("Password"))
                 }
@@ -70,7 +70,7 @@ struct RegistrationView: View {
                 }
                 
                 Button(action: {
-                    authViewModel.register()
+                authViewModel.register(withEmail: email, password: password, image: selectedImage, fullname: fullname, username: username)
                 }, label: {
                     Text("Sign in")
                         .font(.headline)

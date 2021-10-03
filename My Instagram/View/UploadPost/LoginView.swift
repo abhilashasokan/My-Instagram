@@ -18,7 +18,7 @@ struct LoginView: View {
                 LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue]), startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
                 VStack {
-                    Image("instagram_logo_white")
+                    Image("Instagram_logo_white")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 220, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
