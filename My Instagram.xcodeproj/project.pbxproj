@@ -16,6 +16,7 @@
 		8E34D7232708633F0080E367 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E34D7222708633F0080E367 /* AuthViewModel.swift */; };
 		8E34D725270866BD0080E367 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E34D724270866BD0080E367 /* GoogleService-Info.plist */; };
 		8E34D7272709626F0080E367 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E34D7262709626F0080E367 /* ImageUploader.swift */; };
+		8E34D7292709B0990080E367 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E34D7282709B0990080E367 /* Constants.swift */; };
 		8E50550D26F2E0400012ECEE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E50550C26F2E0400012ECEE /* ImagePicker.swift */; };
 		8E50550F26F2E84B0012ECEE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E50550E26F2E84B0012ECEE /* LoginView.swift */; };
 		8E50551126F2E85C0012ECEE /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E50551026F2E85C0012ECEE /* RegistrationView.swift */; };
@@ -48,6 +49,7 @@
 		8E34D7222708633F0080E367 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = SOURCE_ROOT; };
 		8E34D724270866BD0080E367 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E34D7262709626F0080E367 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = SOURCE_ROOT; };
+		8E34D7282709B0990080E367 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8E50550C26F2E0400012ECEE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8E50550E26F2E84B0012ECEE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "My Instagram/View/UploadPost/LoginView.swift"; sourceTree = SOURCE_ROOT; };
 		8E50551026F2E85C0012ECEE /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationView.swift; path = "My Instagram/View/UploadPost/RegistrationView.swift"; sourceTree = SOURCE_ROOT; };
@@ -184,6 +186,7 @@
 				F10ACC3826B7070700E8A58C /* Extensions.swift */,
 				8E50551426F2EF240012ECEE /* CustomTextField.swift */,
 				8E50551626F2EF360012ECEE /* CustomSecureField.swift */,
+				8E34D7282709B0990080E367 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				8EE9925226F230B7007414EA /* NotificationCell.swift in Sources */,
 				8E50550F26F2E84B0012ECEE /* LoginView.swift in Sources */,
 				F10ACC3926B7070700E8A58C /* Extensions.swift in Sources */,
+				8E34D7292709B0990080E367 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

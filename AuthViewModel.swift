@@ -14,10 +14,19 @@ class AuthViewModel: ObservableObject {
     
     init(){
         userSession = Auth.auth().currentUser
+        fetchUser()
     }
     
-    func login() {
-        print("LOG:: Login")
+    func login(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("LOG:: Invalid login \(error.localizedDescription)")
+                return
+            }
+            
+            guard let user = result?.user else { return }
+            self.userSession = user
+        }
     }
     func register(withEmail email: String, password: String, image: UIImage?, fullname: String, username: String) {
         guard let image = image else { return }
@@ -37,7 +46,7 @@ class AuthViewModel: ObservableObject {
                     "uid": user.uid
                 ]
                 
-                Firestore.firestore().collection("users").document(user.uid).setData(userInfo) { _ in
+                COLLECTION_USERS.document(user.uid).setData(userInfo) { _ in
                     self.userSession = user
                 }
             }
@@ -49,7 +58,11 @@ class AuthViewModel: ObservableObject {
         try? Auth.auth().signOut()
     }
     func fetchUser() {
-        
+        guard let uid = userSession?.uid else { return }
+        COLLECTION_USERS.document(uid).getDocument{
+            snapshot, _ in
+            print("LOG:: Current user: \(snapshot?.data())")
+        }
     }
     func resetPassword() {
         
